@@ -1,1 +1,1 @@
-create schema if not exists dbo;
+CREATE SCHEMA IF NOT EXISTS dbo;
