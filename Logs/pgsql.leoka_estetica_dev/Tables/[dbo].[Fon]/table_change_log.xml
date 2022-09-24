@@ -1,20 +1,19 @@
-<databaseChangeLog
+   <databaseChangeLog
     xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-  <changeSet author=""
-            id="[dbo]_CreateSchema_1.sql"
+  <changeSet author="Anton T."
+            id="[dbo].[Fon]_CreateTable"
             dbms="postgresql">
 
     <sqlFile encoding="utf8"
 	           endDelimiter="\nGO"
-	           path="[dbo]_CreateSchema.sql"
+	           path="[dbo].[Fon]_CreateTable.sql"
 	           relativeToChangelogFile="true"
 	           stripComments="false"/>
-
   </changeSet>
-	
+ 
 </databaseChangeLog>
