@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS "Profile"."UserIntents"
 (
-    "UserIntentId" SERIAL,
+    "UserIntentId" BIGSERIAL,
     "IntentId" INT NOT NULL,
     "UserId" BIGINT NOT NULL,
     "Position" INT NOT NULL,
