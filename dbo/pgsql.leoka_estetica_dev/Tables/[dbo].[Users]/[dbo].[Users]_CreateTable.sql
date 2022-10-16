@@ -22,4 +22,4 @@ CREATE TABLE IF NOT EXISTS dbo."Users"
     CONSTRAINT "PK_Users_UserId" PRIMARY KEY ("UserId")
 );
 
-CREATE UNIQUE INDEX "Idx_UserCode" ON dbo."Users" ("UserCode");
+CREATE UNIQUE INDEX IF NOT EXISTS "Idx_UserCode" ON dbo."Users" ("UserCode");

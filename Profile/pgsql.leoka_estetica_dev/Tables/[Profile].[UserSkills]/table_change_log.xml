@@ -1,12 +1,19 @@
-<databaseChangeLog
+   <databaseChangeLog
     xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-<include file="dbo/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
-<include file="Logs/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
-<include file="Profile/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
+  <changeSet author="Anton T."
+            id="[Profile].[UserSkills]_CreateTable"
+            dbms="postgresql">
 
+    <sqlFile encoding="utf8"
+	           endDelimiter="\nGO"
+	           path="[Profile].[UserSkills]_CreateTable.sql"
+	           relativeToChangelogFile="true"
+	           stripComments="false"/>
+  </changeSet>
+ 
 </databaseChangeLog>
