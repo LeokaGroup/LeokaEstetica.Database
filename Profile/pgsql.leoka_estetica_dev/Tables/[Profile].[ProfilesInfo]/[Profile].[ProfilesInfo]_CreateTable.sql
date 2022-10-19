@@ -11,5 +11,7 @@ CREATE TABLE IF NOT EXISTS "Profile"."ProfilesInfo"
     "OtherLink" VARCHAR(200) NULL,
     "Aboutme" TEXT NOT NULL,
     "Job" VARCHAR(200) NULL,
-    CONSTRAINT "PK_ProfilesInfo_ProfileInfoId" PRIMARY KEY ("ProfileInfoId")
+    "UserId" BIGINT,
+    CONSTRAINT "PK_ProfilesInfo_ProfileInfoId" PRIMARY KEY ("ProfileInfoId"),
+    CONSTRAINT "FK_Users_UserId" FOREIGN KEY ("UserId") REFERENCES dbo."Users"("UserId")
 );
