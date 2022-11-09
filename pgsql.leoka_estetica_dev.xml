@@ -11,5 +11,6 @@
 <include file="Projects/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
 <include file="Configs/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
 <include file="Moderation/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
+<include file="Vacancies/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
 
 </databaseChangeLog>
