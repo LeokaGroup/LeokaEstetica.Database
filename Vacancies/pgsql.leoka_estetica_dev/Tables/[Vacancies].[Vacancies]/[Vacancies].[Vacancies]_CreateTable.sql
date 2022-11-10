@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS "Vacancies"."Vacancies"
+CREATE TABLE IF NOT EXISTS "Vacancies"."CatalogVacancies"
 (
     "VacancyId" BIGSERIAL,
     "VacancyName" VARCHAR(250) NOT NULL,
