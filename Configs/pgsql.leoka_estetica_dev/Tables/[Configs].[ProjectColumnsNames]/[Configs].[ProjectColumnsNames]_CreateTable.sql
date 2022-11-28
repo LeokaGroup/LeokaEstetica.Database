@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS "Configs"."ColumnsNames"
+CREATE TABLE IF NOT EXISTS "Configs"."ProjectColumnsNames"
 (
     "ColumnId" BIGSERIAL,
     "ColumnName" VARCHAR(200) NOT NULL,
