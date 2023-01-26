@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS "Subscriptions"."UserSubscriptions"
 (
-    "UserSubscriptionId" BIGINT,
+    "UserSubscriptionId" BIGSERIAL,
     "UserId" BIGINT,
     "IsActive" BOOLEAN NOT NULL DEFAULT FALSE,
     "MonthCount" SMALLINT NOT NULL DEFAULT 1,
