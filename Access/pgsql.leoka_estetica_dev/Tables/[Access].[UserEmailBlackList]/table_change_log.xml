@@ -6,7 +6,7 @@
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
   <changeSet author="Anton T."
-            id="[Access].[UserEmailBlackList]_CreateTable_1"
+            id="[Access].[UserEmailBlackList]_CreateTable_2"
             dbms="postgresql">
 
     <sqlFile encoding="utf8"
