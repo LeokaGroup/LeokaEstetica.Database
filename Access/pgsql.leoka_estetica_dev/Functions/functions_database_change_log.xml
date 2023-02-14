@@ -5,7 +5,9 @@
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-  <include file="[Access].[UserEmailBlackListTrigger]/functions_change_log.xml" relativeToChangelogFile="true"/>
-  <include file="[Access].[UserPhoneBlackListTrigger]/functions_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[Access].[UserEmailBlackListInsert]/functions_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[Access].[UserPhoneBlackListInsert]/functions_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[Access].[UserEmailBlackListDelete]/functions_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[Access].[UserPhoneBlackListDelete]/functions_change_log.xml" relativeToChangelogFile="true"/>
   
 </databaseChangeLog>
