@@ -6,12 +6,12 @@
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
   <changeSet author="Anton T."
-            id="[Access].[UserEmailBlackListInsert]_CreateTrigger_1"
+            id="[Moderation].[Resumes]_CreateTable"
             dbms="postgresql">
 
     <sqlFile encoding="utf8"
 	           endDelimiter="\nGO"
-	           path="[Access].[UserEmailBlackListInsert]_CreateTrigger.sql"
+	           path="[Moderation].[Resumes]_CreateTable.sql"
 	           relativeToChangelogFile="true"
 	           stripComments="false"/>
   </changeSet>
