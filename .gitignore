@@ -5,4 +5,5 @@
 /.vs
 **/pgsql.pgsql.leoka_estetica_dev.properties
 **/package-lock.json
+/.pgsql.pgsql.leoka_estetica_dev.properties
  
