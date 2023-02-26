@@ -19,5 +19,6 @@
 <include file="Commerce/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
 <include file="Subscriptions/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
 <include file="Access/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
+<include file="Notifications/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
 
 </databaseChangeLog>
