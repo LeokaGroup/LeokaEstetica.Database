@@ -15,3 +15,6 @@ CREATE TABLE IF NOT EXISTS "Notifications"."Notifications"
     "IsShow" BOOLEAN NOT NULL,
     CONSTRAINT "PK_Notifications_NotificationId" PRIMARY KEY ("NotificationId")
 );
+
+ALTER TABLE IF EXISTS "Notifications"."Notifications"
+ADD "IsOwner" BOOLEAN NOT NULL DEFAULT FALSE;

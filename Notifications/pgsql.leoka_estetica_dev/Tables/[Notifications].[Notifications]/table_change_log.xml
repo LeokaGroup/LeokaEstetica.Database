@@ -6,7 +6,7 @@
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
   <changeSet author="Anton T."
-            id="[Notifications].[Notifications]_CreateTable"
+            id="[Notifications].[Notifications]_CreateTable_2"
             dbms="postgresql">
 
     <sqlFile encoding="utf8"
