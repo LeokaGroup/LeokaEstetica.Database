@@ -9,5 +9,6 @@
   <include file="[Vacancies].[CatalogVacancies]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Vacancies].[VacancyMenuItems]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Vacancies].[VacancyStatuses]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[Vacancies].[ArchivedVacancies]/table_change_log.xml" relativeToChangelogFile="true"/>
   
 </databaseChangeLog>
