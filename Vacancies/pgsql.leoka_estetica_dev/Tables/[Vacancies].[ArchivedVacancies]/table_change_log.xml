@@ -1,4 +1,4 @@
-<databaseChangeLog
+   <databaseChangeLog
     xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
@@ -6,15 +6,14 @@
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
   <changeSet author="Lev"
-            id="[Commerce]_CreateSchema.sql"
+            id="[Vacancies].[ArchivedVacancies]_CreateTable"
             dbms="postgresql">
 
     <sqlFile encoding="utf8"
 	           endDelimiter="\nGO"
-	           path="[Commerce]_CreateSchema.sql"
+	           path="[Vacancies].[ArchivedVacancies]_CreateTable.sql"
 	           relativeToChangelogFile="true"
 	           stripComments="false"/>
-
   </changeSet>
-	
+ 
 </databaseChangeLog>
