@@ -13,5 +13,5 @@
   <include file="[Projects].[ProjectVacancies]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Projects].[ProjectResponses]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Projects].[ProjectResponseStatuses]/table_change_log.xml" relativeToChangelogFile="true"/>
-  
+  <include file="[Projects].[ArchivedProjects]/table_change_log.xml" relativeToChangelogFile="true"/>
 </databaseChangeLog>
