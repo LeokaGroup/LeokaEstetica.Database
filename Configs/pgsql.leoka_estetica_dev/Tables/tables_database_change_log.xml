@@ -9,5 +9,6 @@
   <include file="[Configs].[ProjectVacancyColumnsNames]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Configs].[ValidationColumnsExclude]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Configs].[ProjectTeamColumnsNames]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[Configs].[GlobalConfig]/table_change_log.xml" relativeToChangelogFile="true"/>
   
 </databaseChangeLog>
