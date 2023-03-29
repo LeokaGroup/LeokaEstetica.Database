@@ -17,4 +17,4 @@ CREATE TABLE IF NOT EXISTS "Profile"."ProfilesInfo"
 );
 
 ALTER TABLE "Profile"."ProfilesInfo" 
-ADD COLUMN IF NOT EXISTS "WorkExperience" VARCHAR(200) NULL;
+ADD COLUMN IF NOT EXISTS "WorkExperience" VARCHAR(50) NULL;
