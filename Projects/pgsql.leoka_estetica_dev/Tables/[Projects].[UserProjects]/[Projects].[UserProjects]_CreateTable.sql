@@ -9,3 +9,6 @@ CREATE TABLE IF NOT EXISTS "Projects"."UserProjects"
     "DateCreated" TIMESTAMP NOT NULL DEFAULT NOW(),
     CONSTRAINT "PK_UserProjects_ProjectId" PRIMARY KEY ("ProjectId")
 );
+
+ALTER TABLE IF EXISTS "Projects"."UserProjects"
+ADD "PublicId" UUID NOT NULL DEFAULT uuid_in(overlay(overlay(md5(random()::text || ':' || random()::text) placing '4' from 13) placing to_hex(floor(random()*(11-8+1) + 8)::int)::text from 17)::cstring);
