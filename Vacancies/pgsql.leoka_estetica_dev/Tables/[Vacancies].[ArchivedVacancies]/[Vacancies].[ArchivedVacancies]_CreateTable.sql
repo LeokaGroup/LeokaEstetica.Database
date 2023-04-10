@@ -7,5 +7,5 @@ CREATE TABLE IF NOT EXISTS "Vacancies"."ArchivedVacancies"
     CONSTRAINT "FK_UserVacancies_VacancyId" FOREIGN KEY("VacancyId") REFERENCES "Vacancies"."UserVacancies"("VacancyId")
 );
 
-ALTER TABLE "Vacancies"."ArchivedVacancies" 
+ALTER TABLE IF EXISTS "Vacancies"."ArchivedVacancies" 
 ADD COLUMN IF NOT EXISTS "UserId" BIGINT NOT NULL;
