@@ -16,5 +16,5 @@ CREATE TABLE IF NOT EXISTS "Profile"."ProfilesInfo"
     CONSTRAINT "FK_Users_UserId" FOREIGN KEY ("UserId") REFERENCES dbo."Users"("UserId")
 );
 
-ALTER TABLE "Profile"."ProfilesInfo" 
+ALTER TABLE IF EXISTS "Profile"."ProfilesInfo" 
 ADD COLUMN IF NOT EXISTS "WorkExperience" VARCHAR(50) NULL;
