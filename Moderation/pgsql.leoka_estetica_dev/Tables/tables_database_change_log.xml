@@ -11,5 +11,7 @@
   <include file="[Moderation].[ModerationStatuses]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Moderation].[Resumes]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Moderation].[Users]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[Moderation].[RemarksStatuses]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[Moderation].[ProjectsRemarks]/table_change_log.xml" relativeToChangelogFile="true"/>
   
 </databaseChangeLog>
