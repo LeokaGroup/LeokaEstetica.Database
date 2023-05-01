@@ -15,5 +15,14 @@
 	           relativeToChangelogFile="true"
 	           stripComments="false"/>
   </changeSet>
+	   <changeSet author="BlackSoulHub"
+			   id="[Moderation].[ProjectsRemarks]_AddRejectReason">
+		   <sqlFile encoding="utf-8"
+					endDelimiter="\nGO"
+				   	path="[Moderation].[ProjectsRemarks]_AddRejectReason.sql"
+		   			relativeToChangelogFile="true"
+					stripComments="false"
+		   />
+	   </changeSet>
  
 </databaseChangeLog>
