@@ -5,15 +5,25 @@
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-  <changeSet author="Anton T."
+  	<changeSet author="Anton T."
             id="[Moderation].[ProjectsRemarks]_CreateTable"
             dbms="postgresql">
 
-    <sqlFile encoding="utf8"
+    	<sqlFile encoding="utf8"
 	           endDelimiter="\nGO"
 	           path="[Moderation].[ProjectsRemarks]_CreateTable.sql"
 	           relativeToChangelogFile="true"
 	           stripComments="false"/>
-  </changeSet>
+  	</changeSet>
+	   
+	<changeSet author="BlackSoulHub"
+			   id="[Moderation].[ProjectsRemarks]_AddRejectReason">
+		   
+		<sqlFile encoding="utf-8"
+					endDelimiter="\nGO"
+				   	path="[Moderation].[ProjectsRemarks]_AddRejectReason.sql"
+		   			relativeToChangelogFile="true"
+					stripComments="false"/>
+	</changeSet>
  
 </databaseChangeLog>
