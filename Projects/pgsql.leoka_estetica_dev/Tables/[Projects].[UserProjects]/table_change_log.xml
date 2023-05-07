@@ -23,7 +23,7 @@
 
 		  <sqlFile encoding="utf8"
 				   endDelimiter="\nGO"
-				   path="[Projects].[UserProjects]_AddCondition.sql"
+				   path="[Projects].[UserProjects]_AddConditions.sql"
 				   relativeToChangelogFile="true"
 				   stripComments="false"/>
 	  </changeSet>
