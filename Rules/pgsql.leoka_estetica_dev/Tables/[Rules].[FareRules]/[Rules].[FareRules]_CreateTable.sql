@@ -10,3 +10,6 @@ CREATE TABLE IF NOT EXISTS "Rules"."FareRules"
     "IsFree" BOOLEAN NOT NULL DEFAULT FALSE,
     CONSTRAINT "PK_FareRules_RuleId" PRIMARY KEY ("RuleId")
 );
+
+ALTER TABLE IF EXISTS "Rules"."FareRules"
+ADD COLUMN "PublicId" UUID NOT NULL DEFAULT uuid_in(("overlay"("overlay"(md5((((random())::text || ':'::text) || (random())::text)), '4'::text, 13), to_hex((floor(((random() * (((11 - 8) + 1))::double precision) + (8)::double precision)))::integer), 17))::cstring);
