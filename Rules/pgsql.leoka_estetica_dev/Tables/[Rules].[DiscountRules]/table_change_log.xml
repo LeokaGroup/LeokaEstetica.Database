@@ -6,7 +6,7 @@
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
   <changeSet author="Anton T."
-            id="[Rules].[DiscountRules]_CreateTable_2"
+            id="[Rules].[DiscountRules]_CreateTable_3"
             dbms="postgresql">
 
     <sqlFile encoding="utf8"
