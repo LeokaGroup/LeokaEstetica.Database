@@ -9,15 +9,3 @@ CREATE TABLE IF NOT EXISTS "Commerce"."OrderTransactionsShadow"
     "StatusName"    VARCHAR(50)             NOT NULL,
     CONSTRAINT "PK_OrderTransactionsShadow_ShadowId" PRIMARY KEY ("ShadowId")
 );
-
-CREATE TRIGGER "OrderTransactionsShadowInsertTrigger"
-    AFTER INSERT
-    ON "Commerce"."OrderTransactionsShadow"
-    FOR EACH ROW
-EXECUTE PROCEDURE "Commerce"."OrderTransactionsInsert"();
-
-CREATE TRIGGER "OrderTransactionsUpdateTrigger"
-    AFTER UPDATE
-    ON "Commerce"."OrderTransactionsShadow"
-    FOR EACH ROW
-EXECUTE PROCEDURE "Commerce"."OrderTransactionsUpdate"();
