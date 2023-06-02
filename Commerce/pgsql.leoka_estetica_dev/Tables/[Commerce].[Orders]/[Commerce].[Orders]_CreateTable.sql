@@ -14,14 +14,14 @@ CREATE TABLE IF NOT EXISTS "Commerce"."Orders"
     CONSTRAINT "PK_Orders_OrderId" PRIMARY KEY ("OrderId")
 );
 
-CREATE TRIGGER "OrderTransactionsShadowInsertTrigger"
-    AFTER INSERT
-    ON "Commerce"."Orders"
-    FOR EACH ROW
-EXECUTE PROCEDURE "Commerce"."OrderTransactionsInsert"();
+-- CREATE OR REPLACE TRIGGER "OrderTransactionsShadowInsertTrigger"
+--     AFTER INSERT
+--     ON "Commerce"."Orders"
+--     FOR EACH ROW
+-- EXECUTE PROCEDURE "Commerce"."OrderTransactionsInsert"();
 
-CREATE TRIGGER "OrderTransactionsUpdateTrigger"
-    AFTER UPDATE
-    ON "Commerce"."Orders"
-    FOR EACH ROW
-EXECUTE PROCEDURE "Commerce"."OrderTransactionsUpdate"();
+-- CREATE OR REPLACE TRIGGER "OrderTransactionsUpdateTrigger"
+--     AFTER UPDATE
+--     ON "Commerce"."Orders"
+--     FOR EACH ROW
+-- EXECUTE PROCEDURE "Commerce"."OrderTransactionsUpdate"();

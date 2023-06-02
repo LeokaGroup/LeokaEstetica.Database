@@ -27,5 +27,16 @@
 				   relativeToChangelogFile="true"
 				   stripComments="false"/>
 	  </changeSet>
+
+	  <changeSet author="BlackSoulHub"
+				  id="[Projects].[UserProjects]_AddDemands"
+				  dbms="postgresql">
+
+		  <sqlFile encoding="utf8"
+				   endDelimiter="\nGO"
+				   path="[Projects].[UserProjects]_AddDemands.sql"
+				   relativeToChangelogFile="true"
+				   stripComments="false"/>
+	  </changeSet>
  
 </databaseChangeLog>
