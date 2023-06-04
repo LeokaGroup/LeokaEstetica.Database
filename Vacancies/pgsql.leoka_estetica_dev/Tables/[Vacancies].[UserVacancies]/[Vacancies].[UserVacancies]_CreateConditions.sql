@@ -1,2 +1,2 @@
-ALTER TABLE IF EXISTS "Projects"."UserProjects"
+ALTER TABLE IF EXISTS "Vacancies"."UserVacancies"
 ADD COLUMN IF NOT EXISTS "Conditions" TEXT NULL;

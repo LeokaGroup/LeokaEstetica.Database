@@ -17,7 +17,7 @@
   </changeSet>
 
   <changeSet author="Anton T."
-            id="[Vacancies].[UserVacancies]_CreateConditions"
+            id="[Vacancies].[UserVacancies]_CreateConditions_2"
             dbms="postgresql">
 
     <sqlFile encoding="utf8"
@@ -28,7 +28,7 @@
   </changeSet>
 
   <changeSet author="Anton T."
-            id="[Vacancies].[UserVacancies]_CreateDemands"
+            id="[Vacancies].[UserVacancies]_CreateDemands_2"
             dbms="postgresql">
 
     <sqlFile encoding="utf8"
