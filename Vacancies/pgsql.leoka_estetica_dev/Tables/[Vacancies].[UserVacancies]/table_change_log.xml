@@ -15,5 +15,27 @@
 	           relativeToChangelogFile="true"
 	           stripComments="false"/>
   </changeSet>
+
+  <changeSet author="Anton T."
+            id="[Vacancies].[UserVacancies]_CreateConditions"
+            dbms="postgresql">
+
+    <sqlFile encoding="utf8"
+	           endDelimiter="\nGO"
+	           path="[Vacancies].[UserVacancies]_CreateConditions.sql"
+	           relativeToChangelogFile="true"
+	           stripComments="false"/>
+  </changeSet>
+
+  <changeSet author="Anton T."
+            id="[Vacancies].[UserVacancies]_CreateDemands"
+            dbms="postgresql">
+
+    <sqlFile encoding="utf8"
+	           endDelimiter="\nGO"
+	           path="[Vacancies].[UserVacancies]_CreateDemands.sql"
+	           relativeToChangelogFile="true"
+	           stripComments="false"/>
+  </changeSet>
  
 </databaseChangeLog>
