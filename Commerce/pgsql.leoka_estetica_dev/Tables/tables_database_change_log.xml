@@ -9,5 +9,6 @@
   <include file="[Commerce].[Receipts]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Commerce].[Products]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Commerce].[OrderTransactionsShadow]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[Commerce].[Refunds]/table_change_log.xml" relativeToChangelogFile="true"/>
   
 </databaseChangeLog>
