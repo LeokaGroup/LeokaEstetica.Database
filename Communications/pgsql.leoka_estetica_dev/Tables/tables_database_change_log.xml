@@ -9,5 +9,12 @@
   <include file="[Communications].[DialogMessages]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Communications].[DialogMembers]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Communications].[ProjectComments]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[Communications].[TicketFiles]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[Communications].[MainInfoTickets]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[Communications].[TicketMembers]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[Communications].[TicketMessages]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[Communications].[TicketRoles]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[Communications].[TicketStatuses]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[Communications].[UserTicketRoles]/table_change_log.xml" relativeToChangelogFile="true"/>
   
 </databaseChangeLog>
