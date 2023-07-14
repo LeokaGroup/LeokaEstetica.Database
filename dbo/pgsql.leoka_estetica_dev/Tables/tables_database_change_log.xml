@@ -11,5 +11,6 @@
   <include file="[dbo].[PlatformOffersItems]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[dbo].[Users]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[dbo].[Timelines]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[dbo].[PlatformConditions]/table_change_log.xml" relativeToChangelogFile="true"/>
   
 </databaseChangeLog>
