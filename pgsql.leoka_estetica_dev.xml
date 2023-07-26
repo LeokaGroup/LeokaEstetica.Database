@@ -6,5 +6,20 @@
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
 <include file="dbo/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
+<include file="Logs/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
+<include file="Profile/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
+<include file="Projects/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
+<include file="Configs/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
+<include file="Moderation/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
+<include file="Vacancies/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
+<include file="Communications/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
+<include file="Roles/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
+<include file="Teams/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
+<include file="Rules/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
+<include file="Commerce/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
+<include file="Subscriptions/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
+<include file="Access/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
+<include file="Notifications/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
+<include file="Knowledge/pgsql.leoka_estetica_dev/databse_change_log.xml" relativeToChangelogFile="true"/>
 
 </databaseChangeLog>
