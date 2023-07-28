@@ -9,18 +9,32 @@ CREATE TABLE IF NOT EXISTS "Knowledge"."KnowledgeSubCategories"
     CONSTRAINT "PK_KnowledgeSubCategories_SubCategoryId" PRIMARY KEY ("SubCategoryId")
 );
 
-ALTER TABLE IF EXISTS "Knowledge"."KnowledgeSubCategories"
-    DROP CONSTRAINT IF EXISTS "FK_KnowledgeCategories_CategoryId";
+DO
+$$
+    BEGIN
+        IF EXISTS(SELECT 1
+                  FROM information_schema.tables
+                  WHERE table_schema = 'Knowledge'
+                    AND table_name = 'KnowledgeSubCategories') THEN
+            ALTER TABLE IF EXISTS "Knowledge"."KnowledgeSubCategories"
+                ADD CONSTRAINT "FK_KnowledgeCategories_CategoryId"
+                    FOREIGN KEY ("CategoryId")
+                        REFERENCES "Knowledge"."KnowledgeCategories" ("CategoryId");
+        END IF;
+    END;
+$$;       
 
-ALTER TABLE IF EXISTS "Knowledge"."KnowledgeSubCategories"
-    DROP CONSTRAINT IF EXISTS "FK_KnowledgeSubCategoriesThemes_SubCategoryThemeId";
-
-ALTER TABLE IF EXISTS "Knowledge"."KnowledgeSubCategories"
-    ADD CONSTRAINT "FK_KnowledgeCategories_CategoryId"
-        FOREIGN KEY ("CategoryId")
-            REFERENCES "Knowledge"."KnowledgeCategories" ("CategoryId");          
-
-ALTER TABLE IF EXISTS "Knowledge"."KnowledgeSubCategories"
-    ADD CONSTRAINT "FK_KnowledgeSubCategoriesThemes_SubCategoryThemeId"
-        FOREIGN KEY ("SubCategoryThemeId")
-            REFERENCES "Knowledge"."KnowledgeSubCategoriesThemes" ("SubCategoryThemeId");
+DO
+$$
+    BEGIN
+        IF EXISTS(SELECT 1
+                  FROM information_schema.tables
+                  WHERE table_schema = 'Knowledge'
+                    AND table_name = 'KnowledgeSubCategoriesThemes') THEN
+            ALTER TABLE IF EXISTS "Knowledge"."KnowledgeSubCategories"
+                ADD CONSTRAINT "FK_KnowledgeSubCategoriesThemes_SubCategoryThemeId"
+                    FOREIGN KEY ("SubCategoryThemeId")
+                        REFERENCES "Knowledge"."KnowledgeSubCategoriesThemes" ("SubCategoryThemeId");
+        END IF;
+    END;
+$$;
