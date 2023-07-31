@@ -10,5 +10,6 @@
   <include file="[Profile].[UserSkills]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Profile].[Intents]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Profile].[UserIntents]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[Profile].[ProfileMenuItems]/table_change_log.xml" relativeToChangelogFile="true"/>
   
 </databaseChangeLog>
