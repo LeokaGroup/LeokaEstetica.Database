@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS "Rules"."DiscountRules"
 (
     "RuleId"      SERIAL,
-    "Percent"     DECIMAL(5, 4)  NOT NULL DEFAULT 0,
+    "Percent"     DECIMAL(7, 4)  NOT NULL DEFAULT 0,
     "Price"       DECIMAL(12, 2) NULL,
     "Type"        VARCHAR(150)   NOT NULL,
     "RussianName" VARCHAR(150)   NOT NULL,
