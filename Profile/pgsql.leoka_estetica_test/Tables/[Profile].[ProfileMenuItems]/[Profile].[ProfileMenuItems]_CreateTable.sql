@@ -1,4 +1,4 @@
-CREATE TABLE "Profile"."ProfileMenuItems"
+CREATE TABLE IF NOT EXISTS "Profile"."ProfileMenuItems"
 (
     "ProfileMenuItemId" SERIAL
         CONSTRAINT "PK_ProfileMenuItems_ProfileMenuItemId"

@@ -1,4 +1,4 @@
-CREATE TABLE "Projects"."ProjectCommentsStatuses"
+CREATE TABLE IF NOT EXISTS "Projects"."ProjectCommentsStatuses"
 (
     "StatusId"      SERIAL
         CONSTRAINT "PK_ProjectCommentsStatuses_StatusId"
