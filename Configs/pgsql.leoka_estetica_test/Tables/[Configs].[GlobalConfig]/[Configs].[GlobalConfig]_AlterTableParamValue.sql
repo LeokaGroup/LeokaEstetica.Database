@@ -1,0 +1,2 @@
+ALTER TABLE IF EXISTS "Configs"."GlobalConfig"
+ALTER COLUMN "ParamValue" TYPE VARCHAR(200);
