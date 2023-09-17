@@ -18,5 +18,7 @@
   <include file="[Communications].[UserTicketRoles]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Communications].[TicketCategories]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Communications].[WishesOffers]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[Communications].[Contacts]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[Communications].[PublicOffer]/table_change_log.xml" relativeToChangelogFile="true"/>
   
 </databaseChangeLog>
