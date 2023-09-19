@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS dbo."Users"
     "LockoutEnd" BOOLEAN NOT NULL DEFAULT FALSE,
     "LockoutEnabled" BOOLEAN NOT NULL DEFAULT FALSE,
     "UserCode" uuid,
-    "ConfirmEmailCode" TEXT NULL DEFAULT '',
+    "ConfirmEmailCode" uuid NULL,
     "LockoutEnabledDate" TIMESTAMP NULL,
     "LockoutEndDate" TIMESTAMP NULL,
     CONSTRAINT "PK_Users_UserId" PRIMARY KEY ("UserId")
