@@ -6,14 +6,14 @@ CREATE TABLE IF NOT EXISTS "Access"."UserEmailBlackList"
     CONSTRAINT "PK_UserEmailBlackList_BlackId" PRIMARY KEY ("BlackId")
 );
 
-CREATE TRIGGER "UserEmailBlackListInsertTrigger"
-AFTER INSERT
-ON "Access"."UserEmailBlackList"
-FOR EACH ROW
-EXECUTE PROCEDURE "Access"."UserEmailBlackListInsert"();
+-- CREATE TRIGGER "UserEmailBlackListInsertTrigger"
+-- AFTER INSERT
+-- ON "Access"."UserEmailBlackList"
+-- FOR EACH ROW
+-- EXECUTE PROCEDURE "Access"."UserEmailBlackListInsert"();
 
-CREATE TRIGGER "UserEmailBlackListDeleteTrigger"
-AFTER DELETE
-ON "Access"."UserEmailBlackList"
-FOR EACH ROW
-EXECUTE PROCEDURE "Access"."UserEmailBlackListDelete"();
+-- CREATE TRIGGER "UserEmailBlackListDeleteTrigger"
+-- AFTER DELETE
+-- ON "Access"."UserEmailBlackList"
+-- FOR EACH ROW
+-- EXECUTE PROCEDURE "Access"."UserEmailBlackListDelete"();

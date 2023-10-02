@@ -16,5 +16,17 @@
 	           stripComments="false"/>
 
   </changeSet>
+
+   <changeSet author="Anton T."
+            id="[Vacancies]_CreateSchema.sql"
+            dbms="postgresql">
+
+    <sqlFile encoding="utf8"
+	           endDelimiter="\nGO"
+	           path="[Vacancies]_CreateSchema.sql"
+	           relativeToChangelogFile="true"
+	           stripComments="false"/>
+
+  </changeSet>
 	
 </databaseChangeLog>
