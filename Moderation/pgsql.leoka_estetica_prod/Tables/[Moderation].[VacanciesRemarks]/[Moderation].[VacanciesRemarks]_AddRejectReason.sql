@@ -1,0 +1,2 @@
+ALTER TABLE IF EXISTS "Moderation"."VacanciesRemarks"
+ADD COLUMN IF NOT EXISTS "RejectReason" VARCHAR(300) NOT NULL DEFAULT '';

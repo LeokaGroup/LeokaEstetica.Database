@@ -1,0 +1,16 @@
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+  <include file="[dbo].[Fon]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[dbo].[Header]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[dbo].[PlatformOffers]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[dbo].[PlatformOffersItems]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[dbo].[Users]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[dbo].[Timelines]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[dbo].[PlatformConditions]/table_change_log.xml" relativeToChangelogFile="true"/>
+  
+</databaseChangeLog>
